@@ -1,0 +1,65 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["network", "pulseaudio", "battery", "clock"],
+    "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}: {icon}",
+    "format-icons": {
+        "urgent": "",
+        "focused": "",
+        "default": ""
+    }
+},
+    "sway/window": {
+    	"format": "{icon}",
+        //"max-length": 50
+    },
+    "network": {
+    "interface": "wlan0",
+    "format-wifi": "{essid} ",
+    "format-disconnected": "❌", 
+    "max-length": 50
+    },
+	"pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-bluetooth": "{volume}% {icon}",
+	"format-muted": "",
+	"format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol"
+},
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        // Connected to AC
+        "format": "{capacity}% ", // Icon: bolt
+        // Not connected to AC
+        "format-discharging": "{capacity}% {icon}",
+        "format-icons": [
+            "", // Icon: battery-full
+            "", // Icon: battery-three-quarters
+            "", // Icon: battery-half
+            "", // Icon: battery-quarter
+            ""  // Icon: battery-empty
+        ],
+        "tooltip": true
+    },	
+    "clock": {
+        "format-alt": "{:%A, %d do %m (%B) %H:%M}"
+    }
+}

@@ -1,0 +1,23 @@
+*{
+	font-family: Cantarell;
+	font-size: 12px;
+}
+
+#input {
+    background-color: #282828;
+    border-radius: 0px;
+    color: #ebdbb2;
+}
+
+#scroll {
+    background-color: #282828;
+    color: #ebdbb2;
+    text-shadow: 0 0 5px #25272b;
+}
+
+#entry:selected {
+    background-color: #689d6a;
+    border-radius: 0px;
+    color: #bcbcbc;
+    font-weight: bold;
+}
