@@ -13,9 +13,11 @@ _linux = "Linux"
 
 
 # should start with + (plus) and contain country code
-PHONE = " "
+PHONE = ""
 
 FILE_PICKER_CMD = "nnn -p {file_path}"
+
+#NOTIFY_CMD = "/usr/bin/mako -title {title} -subtitle {subtitle} -message {msg} -appIcon {icon_path}"
 
 # You can customize chat and msg flags however you want.
 # By default words will be used for readability, but you can make
@@ -61,4 +63,5 @@ else:
         "ffmpeg -f avfoundation -i ':0' -c:a libopus -b:a 32k {file_path}"
     )
 
+NOTIFY_CMD = "notify-send -u low -i {icon_path} {title} {msg}"
 
