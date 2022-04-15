@@ -3,7 +3,7 @@
 	"position": "bottom",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["keyboard-state", "network", "pulseaudio", "battery"],
+	"modules-right": ["keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery"],
 
 // LEFT - Workspaces
 
@@ -43,7 +43,7 @@
 	"pulseaudio": {
 		"format": "{volume}% {icon}",
 		"format-bluetooth": "{volume}% {icon}",
-		"format-muted": "",
+		"format-muted": "",
 		"format-icons": {
         		"headphone": "",
         		"hands-free": "",
@@ -51,10 +51,18 @@
         		"phone": "",
         		"portable": "",
         		"car": "",
-        		"default": ["", ""]
+        		"default": ["", "", ""]
 			},
 		"scroll-step": 1,
 		"on-click": "pavucontrol"
+	},
+
+	"pulseaudio#mic": {
+		"format": "{format_source}",
+		"format-source": "",
+		"format-source-muted": "",
+		"on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+		"tooltip": false
 	},
 
 // RIGHT - Battery
