@@ -200,21 +200,27 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+
 bar {
 	swaybar_command waybar
 }
 
 input * {
-xkb_layout "br"
-xkb_variant "abnt2"
+	xkb_layout "br"
+	xkb_variant "abnt2"
+}
+
+input "type:keyboard" {
+	repeat_delay 300
+	repeat_rate 50
 }
 
 input type:touchpad {
-tap enabled
+	tap enabled
+	accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+	pointer_accel 0.1 # set mouse sensitivity (between -1 and 1)
 }
 
-gaps inner 10
-default_border pixel 3
 seat seat0 xcursor_theme "McMojave Cursors" 48
 
 set $gnome-schema org.gnome.desktop.interface
@@ -223,11 +229,10 @@ exec_always {
     gsettings set $gnome-schema icon-theme 'kora'
 }
 
-bindsym XF86MonBrightnessDown exec light -U 2
-bindsym XF86MonBrightnessUp exec light -A 4
-
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 exec mako
 
