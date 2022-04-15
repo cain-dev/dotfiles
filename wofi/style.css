@@ -1,23 +1,29 @@
-*{
+* {
 	font-family: Cantarell;
 	font-size: 12px;
-}
+	}
 
 #input {
-    background-color: #282828;
-    border-radius: 0px;
-    color: #ebdbb2;
-}
+	background-color: #282828;
+	border-radius: 15px;
+	color: #ebdbb2;
+	}
 
 #scroll {
-    background-color: #282828;
-    color: #ebdbb2;
-    text-shadow: 0 0 5px #25272b;
-}
+	background-color: #282828;
+	}
+
+#text:selected {
+	color: #282828;
+	font-weight: bold;
+	}
+
+#unselected {
+	color: #a6e22e;
+	}
 
 #entry:selected {
-    background-color: #689d6a;
-    border-radius: 0px;
-    color: #bcbcbc;
-    font-weight: bold;
-}
+	background-color: #a6e22e;
+	border-radius: 15px;
+	color: #282828;
+	}
