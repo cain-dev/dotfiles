@@ -2,8 +2,8 @@
 	"layer": "top",
 	"position": "bottom",
 	"modules-left": ["sway/workspaces", "sway/mode"],
-	"modules-center": ["clock", "custom/weather"],
-	"modules-right": ["network", "pulseaudio", "battery"],
+	"modules-center": ["clock"],
+	"modules-right": ["keyboard-state", "network", "pulseaudio", "battery"],
 
 // LEFT - Workspaces
 
@@ -19,14 +19,15 @@
 		"format-alt": "{:%A, %d do %m ( %B ) %H:%M}"
 	},
 
-// Center - Custom/Weather
+// RIGHT - Keyboard-state
 
-	"custom/weather": {
-    		"format": "{}",
-    		"tooltip": true,
-    		"interval": 3600,
-    		"exec": "python /home/cain/.config/waybar/scripts/waybar-wttr.py",
-    		"return-type": "json"
+	"keyboard-state": {
+		"capslock": true,
+		"format": "{icon}",
+		"format-icons": {
+			"locked": "",
+			"unlocked": ""
+      		}
 	},
 
 // RIGHT - Network
