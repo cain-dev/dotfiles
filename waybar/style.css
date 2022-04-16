@@ -55,6 +55,8 @@
 	border-radius: 15px;
 }
 
+#clock,
+#custom-weather,
 #keyboard-state,
 #network,
 #pulseaudio,
@@ -96,6 +98,10 @@
 	border-radius: 15px;
 }
 
+#custom-weather {
+	color: #acada1;
+	text-shadow: 0px 0px 4px #000000;
+}
 
 
 
