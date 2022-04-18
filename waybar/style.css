@@ -39,8 +39,8 @@
 #waybar {
 	background-color: #282828;
 	color: #a6e22e;
-	font-family: Cantarell, Noto Sans;
-	font-size: 14px;
+	font-family: Inconsolata;
+	font-size: 18px;
 	font-weight: bold;
 }
 
