@@ -39,7 +39,7 @@
 #waybar {
 	background-color: #282828;
 	color: #a6e22e;
-	font-family: Inconsolata;
+	font-family: Cantarell;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -102,7 +102,9 @@
 #custom-weather {
 	color: #acada1;
 	text-shadow: 0px 0px 4px #000000;
+	font-size: 14px;
 }
+
 
 #custom-shutdown {
 	color: #F92672;
