@@ -3,7 +3,7 @@
 	"position": "bottom",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/weather", "keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery"],
+	"modules-right": ["keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery", "custom/shutdown"],
 
 // LEFT - Workspaces
 
@@ -17,13 +17,6 @@
 
 	"clock": {
 		"format-alt": "{:%A, %d do %m ( %B ) %H:%M}"
-	},
-
-// CENTER - Custom/Weather
-
-	"custom/weather": {
-		"exec": "curl 'https://wttr.in/?format=3'",
-		"interval": 3600
 	},
 
 // RIGHT - Keyboard-state
@@ -42,7 +35,7 @@
 	"network": {
 		"interface": "wlan0",
 		"format-wifi": "{essid} ",
-		"format-disconnected": "❌", 
+		"format-disconnected": "", 
 	},
 
 // RIGHT - Pulseaudio
@@ -81,7 +74,7 @@
 			"critical": 15
 			},
         	// Connected to AC
-        	"format": "{capacity}% ", // Icon: bolt
+        	"format": "{capacity}% ", // Icon: charging
         	// Not connected to AC
         	"format-discharging": "{capacity}% {icon}",
         	"format-icons": [
@@ -93,5 +86,14 @@
 			],
         	"tooltip": true
     	},
+
+// RIGHT - Custom/Shutdown
+
+	"custom/shutdown": {
+		"format": "",    
+		"on-click": "shutdown now",
+
+	},
+
 
 }

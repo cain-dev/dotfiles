@@ -39,7 +39,7 @@
 #waybar {
 	background-color: #282828;
 	color: #a6e22e;
-	font-family: Cantarell, Noto Sans;
+	font-family: Inconsolata;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -60,6 +60,7 @@
 #keyboard-state,
 #network,
 #pulseaudio,
+#custom-shutdown,
 #battery,
 #tray {
 	padding-left: 8px;
@@ -103,7 +104,9 @@
 	text-shadow: 0px 0px 4px #000000;
 }
 
-
+#custom-shutdown {
+	color: #F92672;
+}
 
 
 
