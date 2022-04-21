@@ -1,0 +1,62 @@
+### colors
+### {{{
+
+### Título
+#
+#cor da linha de título #(OK)
+set color_win_title_bg=2
+#cor do texto na linha de título #(OK)
+set color_win_title_fg=8
+### Janela
+#
+#cor de fundo da janela #(OK)
+set color_win_bg=234
+#cor do texto da janela #(OK)
+set color_win_fg=15
+#cor da linha de seleção #(OK)
+set color_win_sel_bg=89
+#Cor do texto na linha de seleção #(OK)
+set color_win_sel_fg=230
+#cor da linha de separação na interface #(OK)
+set color_separator=2
+#cor do texto de diretório #(not yet)
+set color_win_dir=1
+### Rodapé
+#
+# espaço da linha de status
+#cor da linha de título na barra de status #(OK)
+set color_titleline_bg=2
+#cor do texto da linha de título da barra de status #(OK)
+set color_titleline_fg=8
+#cor da linha de status #(OK)
+set color_statusline_bg=2
+#cor do texto da linha de status #(OK)
+set color_statusline_fg=8
+#
+## espaço da linha de Comando
+#cor do espaço da linha de comando #(OK)
+set color_cmdline_bg=234
+#cor do texto da linha de comando #(OK)
+set color_cmdline_fg=15
+#cor de texto de erro na linha de comando #(OK)
+set color_error=160
+#cor do texto de informação na linha de comando #(OK)
+set color_info=2
+## Area de seleção
+#
+#cor do texto da música atual
+set color_win_cur=40
+#cor do texto da linha selecionada na música atual
+set color_win_cur_sel_fg=40
+#cor da linha selecionada na música atual
+set color_win_cur_sel_bg=89
+#cor da linha 
+set color_win_inactive_cur_sel_bg=89
+#cor do texto guia ativa não selecionado 
+set color_win_inactive_cur_sel_fg=8
+#cor da linha de seleção inativa 
+set color_win_inactive_sel_bg=89
+#cor do texto da linha de seleção inativa
+set color_win_inactive_sel_fg=8
+
+### }}}
