@@ -3,7 +3,7 @@
 	"position": "bottom",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/weather", "keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery", "custom/shutdown"],
+	"modules-right": ["custom/weather", "keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery", "custom/reboot", "custom/shutdown"],
 
 // LEFT - Workspaces
 
@@ -93,6 +93,15 @@
 			],
         	"tooltip": true
     	},
+
+// RIGHT - Custom/Reboot
+
+	"custom/reboot": {
+		"format": "",    
+		"on-click": "shutdown -r now",
+
+	},
+
 
 // RIGHT - Custom/Shutdown
 

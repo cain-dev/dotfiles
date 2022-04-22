@@ -60,6 +60,7 @@
 #keyboard-state,
 #network,
 #pulseaudio,
+#custom-reboot,
 #custom-shutdown,
 #battery,
 #tray {
@@ -106,7 +107,9 @@
 }
 
 
+#custom-reboot,
 #custom-shutdown {
+
 	color: #F92672;
 }
 
