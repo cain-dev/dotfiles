@@ -12,3 +12,6 @@ Defaults env_reset,pwfeedback
 
 # Image preview support for lf 
 https://github.com/cirala/lfimg
+
+# telegram-tg
+https://github.com/paul-nameless/tg
