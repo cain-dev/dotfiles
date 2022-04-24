@@ -23,7 +23,7 @@ set $menu wofi --show=drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/cain/visual/nexus.jpg fill
+output * bg /home/cain/Pictures/visual/nexus.jpg fill
 #
 # Example configuration:
 #
@@ -221,7 +221,7 @@ input type:touchpad {
 	pointer_accel 0.1 # set mouse sensitivity (between -1 and 1)
 }
 
-seat seat0 xcursor_theme "McMojave Cursors" 48
+seat seat0 xcursor_theme "McMojave Cursors" 24
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
@@ -242,3 +242,4 @@ bindsym Print exec grim $HOME/screenshots/$(date +"screen_%Y%m%d_%H%M%S.png")
 exec mako
 
 include ~/.config/sway/config.d/ihategreen
+
