@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/sainnhe/sonokai'
+Plug 'https://github.com/preservim/nerdtree'
 call plug#end()
 
 " neovim options
@@ -15,6 +16,17 @@ set signcolumn=yes
 set cursorline
 set cursorlineopt=number
 
+" Remap
+
+nmap <C-a> :NERDTreeToggle<CR>
+
+" Shortcuts for split navigation
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " Themes
 
 if exists('+termguicolors')
@@ -23,5 +35,12 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+let g:sonokai_style = 'shusia'
 colorscheme sonokai
+
+" AirLine
+
+let g:airline_theme = 'sonokai'
+let g:aitline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
