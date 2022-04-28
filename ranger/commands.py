@@ -131,3 +131,12 @@ class compress(Command):
 
         extension = ['.zip', '.tar.gz', '.rar', '.7z']
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
+
+## Move to Trash
+
+class empty(Command):
+    def execute(self):
+        self.fm.run("rm -rf /home/${USER}/.local/share/Trash/files/")
+
+# Ranger UDISK Menu (Not working anymore, maybe you should delete this...)
+# from ranger_udisk_menu.mounter import mount
