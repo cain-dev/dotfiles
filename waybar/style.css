@@ -1,37 +1,6 @@
-@keyframes blink-charging {
-	70% {
-		background-color: #02231c;
-	}
-
-	to {
-		background-color: #11823b;
-	}
-}
-
-@keyframes blink-warning {
-	70% {
-		color: #FD971F;
-	}
-
-	to {
-		color: #FEED6C;
-	}
-}
-
-@keyframes blink-critical {
-	70% {
-		color: #F92672;
-	}
-
-	to {
-		color: #FF5995;
-	}
-}
-
 * {
 	border: none;
 	border-radius: 0;
-	min-height: 0;
 	margin: 0;
 	padding: 0;
 }
@@ -40,7 +9,7 @@
 	background-color: #282828;
 	color: #a6e22e;
 	font-family: Cantarell;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: bold;
 }
 
@@ -55,6 +24,7 @@
 	border-radius: 15px;
 }
 
+#tray,
 #clock,
 #custom-weather,
 #keyboard-state,
@@ -68,12 +38,6 @@
 	padding-right: 8px;
 }
 
-#battery {
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
 #battery.warning {
 	color: #FD971F;
 }
@@ -82,37 +46,14 @@
 	color: #F92672;
 }
 
-#battery.warning.discharging {
-	animation-name: blink-warning;
-	animation-duration: 0.5s;
-	border-radius: 15px;
-}
-
-#battery.critical.discharging {
-	animation-name: blink-critical;
-	animation-duration: 0.5s;
-	border-radius: 15px;
-}
-
-#battery.charging {
-	animation-name: blink-charging;
-	animation-duration: 0.5s;
-	border-radius: 15px;
-}
-
 #custom-weather {
 	color: #acada1;
 	text-shadow: 0px 0px 4px #000000;
 	font-size: 14px;
 }
 
-
 #custom-reboot,
 #custom-shutdown {
 
 	color: #F92672;
 }
-
-
-
-
