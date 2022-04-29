@@ -15,6 +15,7 @@ set so=999
 set signcolumn=yes
 set cursorline
 set cursorlineopt=number
+set clipboard=unnamedplus
 
 " Remap
 
