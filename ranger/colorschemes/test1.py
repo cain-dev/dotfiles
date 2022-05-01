@@ -12,8 +12,8 @@ class base(ColorScheme):
 
         elif context.in_browser:
             if context.selected:
-                bg = 0 #OK
-                attr |= bold
+                bg = 20 #OK
+                #attr |= bold
             else:
                 attr = normal
             if context.empty or context.error:  
