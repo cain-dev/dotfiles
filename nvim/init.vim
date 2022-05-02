@@ -19,7 +19,7 @@ set nobackup
 set nowritebackup
 set autoread
 set mouse=a
-set rnu
+set nu rnu
 set encoding=UTF-8
 set so=999
 set signcolumn=yes
