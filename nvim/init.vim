@@ -9,7 +9,17 @@ call plug#end()
 
 " neovim options
 
-set number
+syntax on
+set incsearch
+set ignorecase
+set smartcase
+set hidden
+set cmdheight=2
+set nobackup
+set nowritebackup
+set autoread
+set mouse=a
+set rnu
 set encoding=UTF-8
 set so=999
 set signcolumn=yes
