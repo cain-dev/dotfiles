@@ -5,6 +5,8 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/sainnhe/sonokai'
 Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/junegunn/goyo.vim'
+Plug 'https://github.com/junegunn/limelight.vim'
 call plug#end()
 
 " neovim options
@@ -23,8 +25,8 @@ set nu rnu
 set encoding=UTF-8
 set so=999
 set signcolumn=yes
-set cursorline
-set cursorlineopt=number
+set cursorline 
+set culopt=number,screenline
 set clipboard=unnamedplus
 
 " Remap
@@ -54,4 +56,3 @@ colorscheme sonokai
 let g:airline_theme = 'sonokai'
 let g:aitline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
