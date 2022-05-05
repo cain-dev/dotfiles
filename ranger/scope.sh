@@ -65,14 +65,14 @@ handle_extension() {
             exit 1;;
 
         ## PDF
-        #pdf)
+        pdf)
             ## Preview as text conversion
-            #pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | \
-            #  fmt -w "${PV_WIDTH}" && exit 5
-            #mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | \
-            #  fmt -w "${PV_WIDTH}" && exit 5
-            #exiftool "${FILE_PATH}" && exit 5
-            #exit 1;;
+            pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | \
+              fmt -w "${PV_WIDTH}" && exit 5
+            mutool draw -F txt -i -- "${FILE_PATH}" 1-10 | \
+              fmt -w "${PV_WIDTH}" && exit 5
+            exiftool "${FILE_PATH}" && exit 5
+            exit 1;;
 
         ## BitTorrent
         torrent)
@@ -123,7 +123,7 @@ handle_image() {
     ## rendered from vector graphics. If the conversion program allows
     ## specifying only one dimension while keeping the aspect ratio, the width
     ## will be used.
-    local DEFAULT_SIZE="1280x720"#"1920x1080"
+    local DEFAULT_SIZE="1920x1080"
 
     local mimetype="${1}"
     case "${mimetype}" in
