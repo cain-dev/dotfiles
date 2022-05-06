@@ -1,5 +1,3 @@
 function fish_prompt
-    set_color $fish_color_cwd
-    set_color normal
-    echo -n '  '
+	echo (set_color green)(date +%T) (set_color red)(pwd) (set_color yellow)'$' (set_color normal)
 end
