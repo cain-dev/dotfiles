@@ -16,7 +16,6 @@ set incsearch
 set ignorecase
 set smartcase
 set hidden
-set cmdheight=2
 set nobackup
 set nowritebackup
 set autoread
