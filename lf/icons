@@ -1,0 +1,62 @@
+# Common Types
+
+di		# Directory
+fi		# File
+
+# Shell
+
+*.sh		
+
+# Packages
+
+*.deb	
+*.rpm	
+*.msi	
+*.exe	
+
+# Compressed Files
+
+*.rar		
+*.zip		
+*.7z		
+*.tar		
+*.tgz		
+*.tar.gz	
+
+# Video Files
+
+*.mov	
+*.mpg	
+*.mkv	
+*.webm	
+*.avi	
+*.flv	
+*.mp4	
+*.rmv	
+*.wmv	
+
+# Image Files
+
+*.jpg	
+*.jpeg	
+*.gif	 
+*.bmp	 
+*.tga	 
+*.tif	 
+*.tiff	
+*.png	
+*.svg	
+*.webp	
+
+# Audio Files
+
+*.aac	 
+*.flac	
+*.m4a	
+*.midi	
+*.mp3	
+*.ogg	
+*.wav	
+*.opus	
+*.mod	
+
