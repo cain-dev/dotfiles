@@ -1,62 +1,340 @@
+# Cain-dev Icons
+# credits for cdump (https://github.com/cdump/ranger-devicons2) for devicons2
+
 # Common Types
 
-di		# Directory
-fi		# File
+'ln'	''	# Link
+'or'	''	# Orphan
+'di'	''	# Directory
+'fi'	''	# File
 
-# Shell
+# Test Types
 
-*.sh		
+'tw'	''	# Sticky other writable
+'so'	''	# Sock
+
+ow      d       # OTHER_WRITABLE
+st      t       # STICKY
+
+'pi'	'|'	# FIFO
+
+
+
+bd      b       # BLK
+cd      c       # CHR
+su      u       # SETUID
+sg      g       # SETGID
+
+'ex'	'' #''	# Executable
+
+# devicons2 file_node_extensions:
+'*.styl'		''
+'*.sass'		''
+'*.scss'		''
+'*.htm'			''
+'*.html'		''
+'*.slim'		''
+'*.haml'		''
+'*.ejs'			''
+'*.css'			''
+'*.less'		''
+'*.md'			''
+'*.mdx'			''
+'*.markdown'		''
+'*.rmd'			''
+'*.json'		''
+'*.webmanifest'		''
+'*.js'			''
+'*.mjs'			''
+'*.jsx'			''
+'*.rb'			''
+'*.gemspec'		''
+'*.rake'		''
+'*.php'			''
+'*.py'			''
+'*.pyc'			''
+'*.pyo'			''
+'*.pyd'			''
+'*.coffee'		''
+'*.mustache'		''
+'*.hbs'			''
+'*.conf'		''
+'*.ini'			''
+'*.yml'			''
+'*.yaml'		''
+'*.toml'		''
+'*.bat'			''
+'*.mk'			''
+#'*.jpg'       		''
+#'*.jpeg'      		''
+#'*.bmp'       		''
+#'*.png'       		''
+#'*.webp'      		''
+#'*.gif'       		''
+'*.ico'			''
+'*.twig'		''
+'*.cpp'			''
+'*.c++'			''
+'*.cxx'			''
+'*.cc'			''
+'*.cp'			''
+'*.c'			''
+'*.cs'			''
+'*.h'			''
+'*.hh'			''
+'*.hpp'			''
+'*.hxx'			''
+'*.hs'			''
+'*.lhs'			''
+'*.nix'			''
+'*.lua'			''
+'*.java'		''
+'*.sh'			''
+'*.fish'		''
+'*.bash'		''
+'*.zsh'			''
+'*.ksh'			''
+'*.csh'			''
+'*.awk'			''
+'*.ps1'			''
+'*.ml'			'λ'
+'*.mli'			'λ'
+'*.diff'		''
+'*.db'			''
+'*.sql'			''
+'*.dump'		''
+'*.clj'			''
+'*.cljc'		''
+'*.cljs'		''
+'*.edn'			''
+'*.scala'		''
+'*.go'			''
+'*.dart'		''
+'*.xul'			''
+'*.sln'			''
+'*.suo'			''
+'*.pl'			''
+'*.pm'			''
+'*.t'			''
+'*.rss'			''
+'*.f#'			''
+'*.fsscript'		''
+'*.fsx'			''
+'*.fs'			''
+'*.fsi'			''
+'*.rs'			''
+'*.rlib'		''
+'*.d'			''
+'*.erl'			''
+'*.hrl'			''
+'*.ex'			''
+'*.exs'			''
+'*.eex'			''
+'*.leex'		''
+'*.vim'			''
+'*.ai'			''
+'*.psd'			''
+'*.psb'			''
+'*.ts'			''
+'*.tsx'			''
+'*.jl'			''
+'*.pp'			''
+'*.vue'			'﵂'
+'*.elm'			''
+'*.swift'		''
+'*.xcplayground'	''
+'*.tex'			'ﭨ'
+'*.r'			'ﳒ'
+'*.rproj'		'鉶'
+'*.sol'			'ﲹ'
+
+# devicons2 file_node_exact_matches:
+
+'exact-match-case-sensitive-1.txt'	'1'
+'exact-match-case-sensitive-2'		'2'
+'gruntfile.coffee'			''
+'gruntfile.js'				''
+'gruntfile.ls'				''
+'gulpfile.coffee'			''
+'gulpfile.js'				''
+'gulpfile.ls'				''
+'mix.lock'				''
+'dropbox'				''
+'.ds_store'				''
+'.gitconfig'				''
+'.gitignore'				''
+'.gitattributes'			''
+'.gitlab-ci.yml'			''
+'.bashrc'				''
+'.zshrc'				''
+'.zshenv'				''
+'.zprofile'				''
+'.vimrc'				''
+'.gvimrc'				''
+'_vimrc'				''
+'_gvimrc'				''
+'.bashprofile'				''
+'favicon.ico'				''
+'license'				''
+'node_modules'				''
+'react.jsx'				''
+'procfile'				''
+'dockerfile'				''
+'docker-compose.yml'			''
+'rakefile'				''
+'config.ru'				''
+'gemfile'				''
+'makefile'				''
+'cmakelists.txt'			''
+
+# devicons2 file_node_pattern_matches:
+
+'.*jquery.*.js$'			''
+'.*angular.*.js$'			''
+'.*backbone.*.js$'			''
+'.*require.*.js$'			''
+'.*materialize.*.js$'			''
+'.*materialize.*.css$'			''
+'.*mootools.*.js$'			''
+'.*vimrc.*'				''
+'Vagrantfile$'				''
 
 # Packages
 
-*.deb	
-*.rpm	
-*.msi	
-*.exe	
+'*.deb'		''
+'*.rpm'		''
+'*.msi'		''
+'*.exe'		''
 
 # Compressed Files
 
-*.rar		
-*.zip		
-*.7z		
-*.tar		
-*.tgz		
-*.tar.gz	
+'*.rar'		''
+'*.zip'		''
+'*.7z'		''
+'*.tar'		''
+'*.tgz'		''
+'*.tar.gz'	''
 
 # Video Files
 
-*.mov	
-*.mpg	
-*.mkv	
-*.webm	
-*.avi	
-*.flv	
-*.mp4	
-*.rmv	
-*.wmv	
+'*.mov'		''
+'*.mpg'		''
+'*.mkv'		''
+'*.webm'	''
+'*.avi'		''
+'*.flv'		''
+'*.mp4'		''
+'*.rmv'		''
+'*.wmv'		''
 
 # Image Files
 
-*.jpg	
-*.jpeg	
-*.gif	 
-*.bmp	 
-*.tga	 
-*.tif	 
-*.tiff	
-*.png	
-*.svg	
-*.webp	
+'*.jpg'		''
+'*.jpeg'	''
+'*.gif'		'' 
+'*.bmp'		'' 
+'*.tga'		'' 
+'*.tif'		'' 
+'*.tiff'	''
+'*.png'		''
+'*.svg'		''
+'*.webp'	''
 
 # Audio Files
 
-*.aac	 
-*.flac	
-*.m4a	
-*.midi	
-*.mp3	
-*.ogg	
-*.wav	
-*.opus	
-*.mod	
+'*.aac'		'' 
+'*.flac'	''
+'*.m4a'		''
+'*.midi'	''
+'*.mp3'		''
+'*.ogg'		''
+'*.wav'		''
+'*.opus'	''
+'*.mod'		''
 
+# Other Files
+
+'*.txt'		''
+'*.bin'		''
+'*.img'		''	
+'*.cue'		''
+'*.m3u'		''
+'*.otf'		''
+'*.ttf'		''
+'*.pdf'		''
+'*.apk'		''
+
+# M$ Office
+
+'*.doc'		''
+'*.docx'	''
+'*.xls'		''
+'*.xlsx'	''
+'*.ppt'		''
+'*.pptx'	''
+
+# LibreOffice
+
+#'*.odf'		''
+#'*.odt'		''
+
+#ods
+#odp
+
+#rtf
+
+# TEST
+
+'*.suka1'		' '
+'*.suka2'		' '
+'*.MOUNT'		'SUMSANG SSD    '
+'.change wallpaper'	''	
+
+# ]
+# 襁
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+#  copy  cut  
+# 
+# 
+# 
+# 
+# 
+# 
+# 𥉉
+# 
+# 
+# 
+# 
+#
+# 
+# 
+#
+#
+#
+#
+#
+#3 
+#
+#
+#
+#
+#
+# ebook epub 
+#
+# pictures 
+# home 
+# desktop 
+# downloads 
+# 
+# 
