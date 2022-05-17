@@ -5,27 +5,18 @@
 
 'ln'	''	# Link
 'or'	''	# Orphan
-'di'	''	# Directory
-'fi'	''	# File
-
-# Test Types
-
 'tw'	''	# Sticky other writable
+'ow'	''	# Other_writable
+'st'	''	# Sticky
+'di'	''	# Directory
+'pi'	''	# FIFO
 'so'	''	# Sock
-
-ow      d       # OTHER_WRITABLE
-st      t       # STICKY
-
-'pi'	'|'	# FIFO
-
-
-
-bd      b       # BLK
-cd      c       # CHR
-su      u       # SETUID
-sg      g       # SETGID
-
-'ex'	'' #''	# Executable
+'bd'	''	# Block
+'cd'	''	# Char
+'su'	''	# Setuid
+'sg'	''	# Setgid
+'ex'	''	# Executable
+'fi'	''	# File
 
 # devicons2 file_node_extensions:
 '*.styl'		''
@@ -272,69 +263,3 @@ sg      g       # SETGID
 '*.xlsx'	''
 '*.ppt'		''
 '*.pptx'	''
-
-# LibreOffice
-
-#'*.odf'		''
-#'*.odt'		''
-
-#ods
-#odp
-
-#rtf
-
-# TEST
-
-'*.suka1'		' '
-'*.suka2'		' '
-'*.MOUNT'		'SUMSANG SSD    '
-'.change wallpaper'	''	
-
-# ]
-# 襁
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-#  copy  cut  
-# 
-# 
-# 
-# 
-# 
-# 
-# 𥉉
-# 
-# 
-# 
-# 
-#
-# 
-# 
-#
-#
-#
-#
-#
-#3 
-#
-#
-#
-#
-#
-# ebook epub 
-#
-# pictures 
-# home 
-# desktop 
-# downloads 
-# 
-# 
