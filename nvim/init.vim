@@ -39,6 +39,18 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Natural navigation
+
+nnoremap j gj
+nnoremap k gk
+
+" map left/right arrow keys to indendation
+
+nmap <Left> <<
+nmap <Right> >>
+vmap <Left> <gv
+vmap <Right> >gv
+
 " Themes
 
 if exists('+termguicolors')
