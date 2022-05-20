@@ -18,6 +18,17 @@
 'ex'	''	# Executable
 'fi'	''	# File
 
+# Folders Icons
+
+'~/'		''
+'~/.config/'	''
+'~/Desktop/'	''
+'~/Documents/'	''
+'~/Downloads/'	''
+'~/Pictures/'	''
+'~/Music/'	''
+'~/Videos/'	''
+
 # devicons2 file_node_extensions:
 '*.styl'		''
 '*.sass'		''
@@ -180,15 +191,15 @@
 
 # devicons2 file_node_pattern_matches:
 
-'.*jquery.*.js$'			''
-'.*angular.*.js$'			''
-'.*backbone.*.js$'			''
-'.*require.*.js$'			''
-'.*materialize.*.js$'			''
-'.*materialize.*.css$'			''
-'.*mootools.*.js$'			''
-'.*vimrc.*'				''
-'Vagrantfile$'				''
+#'.*jquery.*.js$'			''
+#'.*angular.*.js$'			''
+#'.*backbone.*.js$'			''
+#'.*require.*.js$'			''
+#'.*materialize.*.js$'			''
+#'.*materialize.*.css$'			''
+#'.*mootools.*.js$'			''
+#'.*vimrc.*'				''
+#'Vagrantfile$'				''
 
 # Packages
 
@@ -246,6 +257,8 @@
 # Other Files
 
 '*.txt'		''
+'*.srt'		''
+'*.cbz'		''
 '*.bin'		''
 '*.img'		''	
 '*.cue'		''
