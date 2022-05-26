@@ -2,11 +2,11 @@
 
 /* appearance */
 static const int sloppyfocus        = 1;  /* focus follows mouse */
-static const unsigned int borderpx  = 1;  /* border pixel of windows */
+static const unsigned int borderpx  = 2;  /* border pixel of windows */
 static const int lockfullscreen     = 1;  /* 1 will force focus on the fullscreen window */
-static const float rootcolor[]      = {0.3, 0.3, 0.3, 1.0};
-static const float bordercolor[]    = {0.5, 0.5, 0.5, 1.0};
-static const float focuscolor[]     = {0.0, 1.0, 0.0, 1.0};
+static const float rootcolor[]      = {0.862, 0.145, 0.4, 1};
+static const float bordercolor[]    = {0.282, 0.282, 0.243, 1};
+static const float focuscolor[]     = {0.560, 0.752, 0.160, 1};
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -96,7 +96,8 @@ static const double accel_speed = 0.1;
 static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *mute[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
-
+static const char *upbright[] = { "brightnessctl", "set", "+20",NULL };
+static const char *downbright[] = { "brightnessctl", "set", "20-",NULL };
 static const char *termcmd[] = { "foot", NULL };
 static const char *menucmd[] = { "bemenu-run", NULL };
 
@@ -145,6 +146,8 @@ static const Key keys[] = {
 	{ 0,XF86XK_AudioRaiseVolume,	spawn,{.v = upvol } },
 	{ 0,XF86XK_AudioLowerVolume,	spawn,{.v = downvol } },
 	{ 0,XF86XK_AudioMute,		spawn,{.v = mute } },
+	{ 0,XF86XK_MonBrightnessUp,	spawn,{.v = upbright } },
+	{ 0,XF86XK_MonBrightnessDown,	spawn,{.v = downbright } },
 };
 
 static const Button buttons[] = {
