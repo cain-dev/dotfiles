@@ -212,6 +212,27 @@ bar:
             values:
               0: {string: {text: , foreground: 8fc029ff}}
 
+    - network:
+        name: wlan0
+        content:
+          map:
+            tag: state
+            default: {string: {text: '', font: *awesome}}
+            values:
+              down: {string: {text: ' {ssid}', font: *awesome, foreground: dc2566ff}}
+              up:
+                map:
+                  tag: ipv4
+                  default: &ip_assigned {string: {text: ' {ssid}', font: *awesome, foreground: 8fc029ff}}
+                  values:
+                    '':
+                      map:
+                        tag: ipv6
+                        default: *ip_assigned
+                        values:
+                          '': {string: {text: '', font: *awesome}}
+
+
     - battery:
         name: BAT0
         poll-interval: 5
