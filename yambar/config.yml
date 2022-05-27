@@ -6,8 +6,8 @@ bar:
   background: 48483ecc
 
   border:
-    width: 1
-    color: 8fc029FF
+    #width: 1
+    #color: 8fc029FF
     bottom-margin: 2
 
   left:
@@ -189,16 +189,26 @@ bar:
                     values:
                       true: {string: {text: "{tag_9}", <<: *focused}}
                       false: {string: {text: "{tag_9}", <<: *default}}
-          - list:
-              spacing: 3
-              items:
-                - string: {text: "{title}"}
+                        #- list:
+                        #spacing: 3
+                        #items:
+                        #- string: {text: "{title}"}
   center:
     - clock:
         content:
           - string: {text: , font: "Font Awesome 5 Free:style=solid:size=12"}
           - string: {text: "{time}"}
-  right: 
+  right:
+    - script:
+        path: /home/cain/.config/yambar/pacman.sh
+        args: [] 
+        content:
+          map:
+            tag: pkg
+            default: { string: { text: "{pacman}  " } }
+            values:
+              0: {string: {text: }}
+
     - label:
         content:
           string:
