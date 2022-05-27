@@ -1,3 +1,9 @@
+.fonts:
+  awesome: &awesome Font Awesome 5 Free:style=solid:pixelsize=14
+  awesome_brands: &awesome_brands Font Awesome 5 Brands:pixelsize=16	
+
+std_underline: &std_underline {underline: { size: 2, color: ff0000ff}}
+
 bar:
   height: 24
   location: top
@@ -189,14 +195,11 @@ bar:
                     values:
                       true: {string: {text: "{tag_9}", <<: *focused}}
                       false: {string: {text: "{tag_9}", <<: *default}}
-                        #- list:
-                        #spacing: 3
-                        #items:
-                        #- string: {text: "{title}"}
+  
   center:
     - clock:
         content:
-          - string: {text: , font: "Font Awesome 5 Free:style=solid:size=12"}
+          - string: {text: , font: *awesome}
           - string: {text: "{time}"}
   right:
     - script:
@@ -205,20 +208,45 @@ bar:
         content:
           map:
             tag: pkg
-            default: { string: { text: "{pacman}  " } }
+            default: { string: { text: "{pacman}  ", foreground: fba922ff} }
             values:
-              0: {string: {text: }}
+              0: {string: {text: , foreground: 8fc029ff}}
+
+    - battery:
+        name: BAT0
+        poll-interval: 5
+        content:
+          list:
+            spacing: 4
+            items:
+              - map:
+                  tag: state
+                  values:
+                    discharging:
+                      ramp:
+                        tag: capacity
+                        items:
+                          - string: {text: '', font: *awesome, foreground: dc2566ff}
+                          - string: {text: '', font: *awesome, foreground: 8fc029ff}
+                          - string: {text: '', font: *awesome, foreground: 8fc029ff}
+                          - string: {text: '', font: *awesome, foreground: 8fc029ff}
+                          - string: {text: '', font: *awesome, foreground: 8fc029ff}
+                    charging:
+                      string: &charging {text: '', font: *awesome, foreground: fba922ff}
+                    full:
+                      string: {<<: *charging}
+              - string: {text: '{capacity}%'}
 
     - label:
         content:
           string:
             on-click: shutdown -r now
             text: 
-            font: "Font Awesome 5 Free:style=solid:size=12"
+            font: *awesome
 
     - label:
         content:
           string:
             on-click: shutdown now
             text: 
-            font: "Font Awesome 5 Free:style=solid:size=12"
+            font: *awesome
