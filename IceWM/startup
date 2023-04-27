@@ -1,0 +1,9 @@
+#!/bin/bash
+setxkbmap -model pc105 -layout br -variant abnt2 &
+/usr/lib/notification-daemon-1.0/notification-daemon &
+feh --bg-fill /home/cain/Pictures/Wallpapers/wall.png
+
+#sleep 1
+#volumeicon &
+#nm-applet &
+
