@@ -1,0 +1,3 @@
+[binds]
+<Delete> = exec gio trash "$imv_current_file"; prev
+
