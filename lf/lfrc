@@ -1,0 +1,124 @@
+# ========== General settings ==========
+# set interpreter for shell commands
+set shell bash
+# have safer shell commands
+set shellopts '-eu'
+# set internal field separator (IFS) to "\n" for shell commands
+set ifs "\n"
+
+# ========== Visual ==========
+# enable icons
+set icons
+# set column ratio
+set ratios 1:1
+# set the drawbox lines
+set drawbox
+# leave space top and bottom of the screen
+set scrolloff 5
+# directory update rate per second
+set period 1
+# Use the `dim` attribute instead of underline for the cursor in the preview pane
+set cursorpreviewfmt "\033[7;2m"
+
+# ========== Previewer settings ==========
+# enable sixels
+set sixel
+# enable cptv preview
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
+# ========== Custom mappings ==========
+# already default
+#map y copy
+# already default
+#map d cut
+# already default
+# map p paste
+map P paste-overwrite
+# already default
+# map c clear
+# already default
+# map space select
+## use '<delete>' key for either 'trash' or 'delete' command
+# map <delete> trash
+map <delete> delete
+# already default
+# map r rename
+# toggle hidden files
+map . set hidden!
+
+# dedicated keys for file opener actions
+map o &mimeopen $f
+map O $mimeopen --ask $f
+# Não funciona?
+
+# mkdir command. See wiki if you want it to select created dir
+map n :push %mkdir<space>
+map N :push %touch<space>
+
+# execute current file (must be executable)
+map x $$f
+map X !$f
+
+# show the result of execution of previous commands
+map ` !true
+
+# use enter for shell commands
+map <enter> shell
+
+# extract files
+map a extract
+
+# ========== Commands ==========
+# extract command
+cmd extract ${{
+  set -f
+  case $f in
+    *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+    *.tar.gz|*.tgz) tar xzvf $f;;
+    *.tar.xz|*.txz) tar xJvf $f;;
+    *.tar) tar xvf $f;;
+    *.zip) unzip $f;;
+    *.rar) unrar x $f;;
+    *.7z) 7z x $f;;
+    *) echo "Unsupported format";;
+  esac
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+
+}}
+
+# opening command
+cmd open &{{
+    case $(file --mime-type -Lb $f) in
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+	#video/*) mpv --fs $f;;
+	image/*) imv -f $f;;
+	video/*) mpv --fs $f;;
+        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# move current file or selected files to trash folder
+# (also see 'man mv' for backup/overwrite options)
+# cmd trash %set -f; mv $fx ~/.trash
+
+# define a custom 'open' command
+# This command is called when current file is not a directory. You may want to
+# use either file extensions and/or mime types here. Below uses an editor for
+# text files and a file opener for the rest.
+#cmd open &{{
+#    case $(file --mime-type -Lb $f) in
+#        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+#        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+#    esac
+#}}

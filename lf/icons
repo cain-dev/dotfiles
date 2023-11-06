@@ -16,18 +16,18 @@
 'su'	''	# Setuid
 'sg'	''	# Setgid
 'ex'	''	# Executable
-'fi'	''	# File
+'fi'	''	# File
 
 # Folders Icons
 
 '~/'		''
 '~/.config/'	''
-'~/Desktop/'	''
-'~/Documents/'	''
-'~/Downloads/'	''
-'~/Pictures/'	''
-'~/Music/'	''
-'~/Videos/'	''
+#'~/Desktop/'	''
+#'~/Documents/'	''
+#'~/Downloads/'	'󱃩'
+#'~/Pictures/'	''
+#'~/Music/'	''
+#'~/Videos/'	''
 
 # devicons2 file_node_extensions:
 '*.styl'		''
@@ -213,6 +213,7 @@
 '*.rar'		''
 '*.zip'		''
 '*.7z'		''
+'*.img.gz'	''
 '*.tar'		''
 '*.tgz'		''
 '*.tar.gz'	''
@@ -257,7 +258,7 @@
 # Other Files
 
 '*.txt'		''
-'*.srt'		''
+'*.srt'		'''
 '*.cbz'		''
 '*.bin'		''
 '*.img'		''	
@@ -265,9 +266,9 @@
 '*.m3u'		''
 '*.otf'		''
 '*.ttf'		''
-'*.pdf'		''
+'*.pdf'		''
 '*.apk'		''
-'*.torrent'	''
+'*.torrent'	'󰥥'
 
 # M$ Office
 
@@ -277,3 +278,4 @@
 '*.xlsx'	''
 '*.ppt'		''
 '*.pptx'	''
+
