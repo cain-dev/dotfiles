@@ -13,14 +13,45 @@
 	font-weight: bold;
 }
 
-#workspaces button {
+#tags button {
 	padding: 0 5px;
 	color: #a6e22e;
+}
+
+#tags button.occupied {
+	color: #F92672;
+	border-radius: 15px;
+}
+
+#tags button.focused {
+	color: #000;
+	background: #a6e22e;
+	border-radius: 15px;
+}
+#tags button.urgent {
+	color: #282828;
+	background: #F92672;
+	border-radius: 15px;
+}
+
+#workspaces button {
+	padding: 0 10px;
+	color: #a6e22e;
+}
+
+#workspaces button.current_output {
+	color: #F92672;
+	border-radius: 15px;
 }
 
 #workspaces button.focused {
 	color: #000;
 	background: #a6e22e;
+	border-radius: 15px;
+}
+#workspaces button.urgent {
+	color: #282828;
+	background: #F92672;
 	border-radius: 15px;
 }
 
@@ -57,3 +88,4 @@
 
 	color: #F92672;
 }
+
