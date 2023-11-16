@@ -1,17 +1,35 @@
-{
+{	
 	"layer": "top",
 	"position": "bottom",
-	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-left": ["dwl/tags", "sway/workspaces", "sway/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "keyboard-state", "network", "pulseaudio", "pulseaudio#mic", "battery", "custom/reboot", "custom/shutdown"],
+	"modules-right": ["tray", "keyboard-state", "pulseaudio", "pulseaudio#mic", "battery", "custom/reboot", "custom/shutdown"],
 
 // LEFT - Workspaces
 
 	"sway/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
-		"format": "{name}",
+		"format": "{name} {icon}",
+		"format-icons": {
+			"default": "",
 		},
+		"persistent_workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+			"6": [],
+			"7": [],
+			"8": [],
+			"9": [],
+			"10": [],
+		}
+	},
+	"dwl/tags": {
+		"num-tags": 9,
+	},
 
 // CENTER - Clock
 
@@ -27,23 +45,23 @@
 	},
 
 // RIGHT - Keyboard-state
-
-	"keyboard-state": {
-		"capslock": true,
-		"format": "{icon}",
-		"format-icons": {
-			"locked": "",
-			"unlocked": ""
-      		}
-	},
+//
+//	"keyboard-state": {
+//		"capslock": true,
+//		"format": "{icon}",
+//		"format-icons": {
+//			"locked": "",
+//			"unlocked": ""
+//      		}
+//	},
 
 // RIGHT - Network
-
-	"network": {
-		"interface": "wlan0",
-		"format-wifi": "{essid} ",
-		"format-disconnected": "", 
-	},
+//
+//	"network": {
+//		"interface": "wlan0",
+//		"format-wifi": "{essid} ",
+//		"format-disconnected": "", 
+//	},
 
 // RIGHT - Pulseaudio
 
@@ -61,7 +79,8 @@
         		"default": ["", "", ""]
 			},
 		"scroll-step": 1,
-		"on-click": "pavucontrol"
+		"on-click": "pavucontrol",
+		"max-volume": "100%"
 	},
 
 	"pulseaudio#mic": {
@@ -113,4 +132,5 @@
 
 
 }
+
 
