@@ -3,7 +3,7 @@
 	"position": "bottom",
 	"modules-left": ["dwl/tags", "sway/workspaces", "sway/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "keyboard-state", "pulseaudio", "pulseaudio#mic", "battery", "custom/reboot", "custom/shutdown"],
+	"modules-right": ["tray", "mpd", "keyboard-state", "pulseaudio", "pulseaudio#mic", "battery", "custom/reboot", "custom/shutdown"],
 
 // LEFT - Workspaces
 
@@ -42,7 +42,39 @@
 	"tray": {
         	//"icon-size": 21,
         	"spacing": 10,
-	},
+	},	
+
+	"mpd": {
+        	"format": "{stateIcon}  {filename} [{elapsedTime:%M:%S}/{totalTime:%M:%S}]",
+        	"format-disconnected": "Disconnected",
+        	"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped",
+		"format-paused": "{stateIcon}",
+        	"unknown-tag": "N/A",
+        	"interval": 2,
+        	"consume-icons": {
+            		"on": " "
+        	},
+        	"random-icons": {
+            		"off": "<span color=\"#f53c3c\"></span> ",
+            		"on": " "
+        	},
+        	"repeat-icons": {
+            		"on": " "
+        	},
+        	"single-icons": {
+            		"on": " "
+        	},
+        	"state-icons": {
+            		"paused": "",
+            		"playing": ""
+        	},
+        	"tooltip-format": "MPD (connected)",
+        	"tooltip-format-disconnected": "MPD (disconnected)",
+		"artist-len": 30,
+		"album-len": 30,
+		"title-len": 28
+    	},
+
 
 // RIGHT - Keyboard-state
 //

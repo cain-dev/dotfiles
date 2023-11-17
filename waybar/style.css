@@ -56,6 +56,7 @@
 }
 
 #tray,
+#mpd,
 #clock,
 #custom-weather,
 #keyboard-state,
@@ -67,7 +68,7 @@
 #tray {
 	padding-left: 8px;
 	padding-right: 8px;
-}
+} 
 
 #battery.warning {
 	color: #FD971F;
