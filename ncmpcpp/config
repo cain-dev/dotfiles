@@ -98,19 +98,19 @@ mpd_connection_timeout = 5
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
 ##
-#visualizer_type = spectrum
+visualizer_type = spectrum
 #
-#visualizer_fps = 60
+visualizer_fps = 60
 #
-#visualizer_autoscale = no
+visualizer_autoscale = yes
 #
-#visualizer_look = ●▮
+visualizer_look = ●▮
 #
 #visualizer_color = blue, cyan, green, yellow, magenta, red
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
-#visualizer_color = 47, 83, 119, 155, 191, 227, 221, 215, 209, 203, 197, 161
+visualizer_color = 47, 83, 119, 155, 191, 227, 221, 215, 209, 203, 197, 161
 #
 ##
 ## Note: The next few visualization options apply to the spectrum visualizer.
@@ -121,7 +121,7 @@ mpd_connection_timeout = 5
 ## and visualizer_in_stereo set, artifacts may be visible on the bottom half of
 ## the visualization.
 #
-#visualizer_spectrum_smooth_look = yes
+visualizer_spectrum_smooth_look = yes
 #
 ## A value between 1 and 5 inclusive. Specifying a larger value makes the
 ## visualizer look at a larger slice of time, which results in less jumpy
@@ -340,9 +340,9 @@ mpd_connection_timeout = 5
 ##
 ## Note: Possible display modes: classic, columns.
 ##
-#playlist_display_mode = columns
+playlist_display_mode = classic
 #
-#browser_display_mode = classic
+browser_display_mode = classic
 #
 #search_engine_display_mode = classic
 #
@@ -367,6 +367,7 @@ mpd_connection_timeout = 5
 ## part of progressbar.
 ##
 #progressbar_look = =>
+progressbar_look = _
 #
 ## Available values: database, playlist.
 ##
@@ -374,7 +375,7 @@ mpd_connection_timeout = 5
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = alternative
 #
 #data_fetching_delay = yes
 #
@@ -445,7 +446,7 @@ mpd_connection_timeout = 5
 ##
 ## Note: You can define startup screen by choosing screen from the list above.
 ##
-#startup_screen = playlist
+startup_screen = browser
 #
 ##
 ## Note: You can define startup slave screen by choosing screen from the list
@@ -471,7 +472,7 @@ mpd_connection_timeout = 5
 #
 #display_volume_level = yes
 #
-#display_bitrate = no
+display_bitrate = yes
 #
 #display_remaining_time = no
 #
@@ -494,13 +495,13 @@ mpd_connection_timeout = 5
 #
 #block_search_constraints_change_if_items_found = yes
 #
-#mouse_support = yes
+mouse_support = yes
 #
 #mouse_list_scroll_whole_page = no
 #
 #lines_scrolled = 5
 #
-#empty_tag_marker = <empty>
+empty_tag_marker = 
 #
 #tags_separator = " | "
 #
