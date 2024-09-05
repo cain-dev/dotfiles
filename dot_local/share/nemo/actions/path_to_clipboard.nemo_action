@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Copiar caminho
+Comment=Copia o caminho absoluto do arquivo para a área de transferência
+Exec=sh -c "echo -n %F | wl-copy"
+Icon-Name=edit-copy
+Selection=Single
+Extensions=any;
+Dependencies=wl-copy;
